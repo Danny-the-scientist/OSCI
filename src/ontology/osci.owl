@@ -32,6 +32,7 @@
         <dc:creator xml:lang="en">William Duncan</dc:creator>
         <dc:creator xml:lang="en">Yongqun Oliver He</dc:creator>
         <owl:imports rdf:resource="&obo;osci/CLO_import.owl"/>
+        <owl:imports rdf:resource="&obo;osci/CL_import.owl"/>
     </owl:Ontology>
 </rdf:RDF>
 
