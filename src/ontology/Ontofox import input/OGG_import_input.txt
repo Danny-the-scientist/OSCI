@@ -1,0 +1,35 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/osci/OGG_import.owl
+
+[Source ontology]
+OGG
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OGG_0000000002 #gene
+
+
+# reference:https://www.nature.com/articles/tp2016284.pdf 
+http://purl.obolibrary.org/obo/OGG_3000055655 #NLRP2
+http://purl.obolibrary.org/obo/OGG_3000000059 #ACTA2
+http://purl.obolibrary.org/obo/OGG_3000387845 #EEF1A1P16
+http://purl.obolibrary.org/obo/OGG_3000006876 #TAGLN
+http://purl.obolibrary.org/obo/OGG_3000090273 #CEACAM21
+http://purl.obolibrary.org/obo/OGG_3000007425 #VGF
+http://purl.obolibrary.org/obo/OGG_3000092737 #DNER
+http://purl.obolibrary.org/obo/OGG_3000000286 #ANK1
+http://purl.obolibrary.org/obo/OGG_3000050509 #COL5A3
+http://purl.obolibrary.org/obo/OGG_3000008490 #RGS5
+http://purl.obolibrary.org/obo/OGG_3000055824 #PAG1
+http://purl.obolibrary.org/obo/OGG_3000009568 #GABBR2
+http://purl.obolibrary.org/obo/OGG_3000081706 #PPP1R14C
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001 
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+includeAllAxiomsRecursively

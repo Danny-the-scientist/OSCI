@@ -22,19 +22,417 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;osci.owl">
-        <dc:date xml:lang="en">05-19-2018</dc:date>
+        <dc:date xml:lang="en">05-25-2018</dc:date>
         <dc:subject xml:lang="en">A biomedical ontology to support stem cell investigation</dc:subject>
         <dc:creator xml:lang="en">Alexander Diehl</dc:creator>
+        <dc:creator xml:lang="en">Jens Hansen</dc:creator>
         <dc:description xml:lang="en">OSCI is a biomedical ontology in the area of stem cell investigation. OSCI imports existing ontologies such as CL, CLO, and OBI, and aims to support standardized stem cell representation, integration, and analysis.</dc:description>
         <dc:title xml:lang="en">OSCI: Ontology of Stem Cell Investigation</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.01</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.02</owl:versionInfo>
         <dc:creator xml:lang="en">William Duncan</dc:creator>
         <dc:creator xml:lang="en">Yongqun Oliver He</dc:creator>
         <owl:imports rdf:resource="&obo;osci/CLO_import.owl"/>
         <owl:imports rdf:resource="&obo;osci/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;osci/OBI_import.owl"/>
+        <owl:imports rdf:resource="&obo;osci/OGG_import.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0000015 -->
+
+    <rdf:Description rdf:about="&obo;CLO_0000015">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000000059 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000000059">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/28117838</obo:IAO_0000119>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000000286 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000000286">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000006876 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000006876">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000007425 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000007425">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000008490 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000008490">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000009568 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000009568">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000050509 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000050509">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000055655 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000055655">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000006"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/28117838</obo:IAO_0000119>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage and at iPSC stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000055824 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000055824">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000081706 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000081706">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000090273 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000090273">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000092737 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000092737">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at neural stem cell stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000387845 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000387845">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OSCI_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OSCI_0000006"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This gene is upregulated at iPSC stage. Ref: https://www.ncbi.nlm.nih.gov/pubmed/28117838</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000001 -->
+
+    <owl:Class rdf:about="&obo;OSCI_0000001">
+        <rdfs:label xml:lang="en">gene marker role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000004 -->
+
+    <owl:Class rdf:about="&obo;OSCI_0000004">
+        <rdfs:label xml:lang="en">stem cell marker process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000005 -->
+
+    <owl:Class rdf:about="&obo;OSCI_0000005">
+        <rdfs:label xml:lang="en">neural stem cell marker process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OSCI_0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000006 -->
+
+    <owl:Class rdf:about="&obo;OSCI_0000006">
+        <rdfs:label xml:lang="en">iPSC marker process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OSCI_0000004"/>
+    </owl:Class>
 </rdf:RDF>
 
 
