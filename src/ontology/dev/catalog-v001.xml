@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/osci/OBIB_import.owl" uri="imports/OBIB_import.owl"/>
     <group id="imports" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/osci.owl" uri="osci.owl"/>
         <uri name="http://purl.obolibrary.org/obo/osci/CLO_import.owl" uri="imports/CLO_import.owl"/>

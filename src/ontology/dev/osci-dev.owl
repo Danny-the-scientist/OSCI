@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/osci.owl/"
-     xml:base="http://purl.obolibrary.org/obo/osci.owl/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/dev/osci.owl/"
+     xml:base="http://purl.obolibrary.org/obo/dev/osci.owl/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
@@ -14,7 +14,7 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/osci.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/dev/osci.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/osci/CL_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/osci/OBI_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/osci/OGG_import.owl"/>
@@ -175,6 +175,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
+        <rdfs:label>has role</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -204,6 +212,19 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110087 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110087">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
     
 
 
@@ -734,6 +755,27 @@
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T23:12:12Z</dc:date>
         <rdfs:label>cell culture protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000030">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_1110087"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-01T22:52:21Z</dc:date>
+        <rdfs:label>donor</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
