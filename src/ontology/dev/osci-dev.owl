@@ -658,6 +658,83 @@
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T23:03:57Z</dc:date>
         <rdfs:label>feeder cell</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T23:05:48Z</dc:date>
+        <rdfs:label>feeder cell preparation protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T23:08:01Z</dc:date>
+        <rdfs:label>source cell storage/master cell banking protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T23:09:23Z</dc:date>
+        <rdfs:label>source cell procurement protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T23:10:11Z</dc:date>
+        <rdfs:label>material transferring protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T23:10:35Z</dc:date>
+        <rdfs:label>cell passage protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T23:11:25Z</dc:date>
+        <rdfs:label>establishment protocol (molecular induction protocol)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T23:12:12Z</dc:date>
+        <rdfs:label>cell culture protocol</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
