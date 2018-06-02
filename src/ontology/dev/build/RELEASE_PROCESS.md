@@ -28,6 +28,6 @@ git push
 ```
 - tag the repo with the date and time and push the tag: 
 ```
-git tag release_`date '+%Y-%m-%dT%H:%M:%S'` -m "OSCI REALEASE $(date '+%Y-%m-%d %H:%M:%S')"
+git tag OSCI_release_$(date '+%Y-%m-%dT%H_%M_%S') -m "OSCI REALEASE $(date '+%Y-%m-%d %H:%M:%S')"
 git push origin --tags
 ```
