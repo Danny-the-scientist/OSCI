@@ -17,11 +17,14 @@ http://purl.obolibrary.org/obo/IAO_0000005 #objective specification
 http://purl.obolibrary.org/obo/IAO_0000027 #data item
 http://purl.obolibrary.org/obo/OBI_0001909 #conclusion based on data
 http://purl.obolibrary.org/obo/OBI_0000070 #assay
+http://purl.obolibrary.org/obo/OBI_0000443 #analyte assay
+http://purl.obolibrary.org/obo/OBI_0000079 #culture medium
 http://purl.obolibrary.org/obo/IAO_0000572 #documenting
 http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
 http://purl.obolibrary.org/obo/OBI_0000338 #drawing a conclusion based on data
 http://purl.obolibrary.org/obo/OBI_0000066 #investigation 
 http://purl.obolibrary.org/obo/OBI_0000659 #specimen collection process
+http://purl.obolibrary.org/obo/OBI_1110087 #donor role
 http://purl.obolibrary.org/obo/OBI_0001933 #value specification
 includeAllChildren 
 http://purl.obolibrary.org/obo/OBI_0000471 #study design execution

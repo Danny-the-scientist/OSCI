@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/osci/OBI_import.owl" uri="imports/OBI_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/osci/OBI_import.owl" uri="imports/OBIB_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/osci/OBIB_import.owl" uri="imports/OBIB_import.owl"/>
     <group id="imports" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/osci.owl" uri="osci.owl"/>
@@ -8,5 +10,6 @@
         <uri name="http://purl.obolibrary.org/obo/osci/OBI_import.owl" uri="imports/OBI_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/osci/OGG_import.owl" uri="imports/OGG_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/osci/OMRSE_import.owl" uri="imports/OMRSE_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/osci/NCIT_import.owl" uri="imports/NCIT_import.owl"/>
     </group>
 </catalog>
