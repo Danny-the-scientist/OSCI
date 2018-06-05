@@ -1,9 +1,6 @@
 cp ../osci-dev.owl .
-cp ../imports/CLO_import.owl .
-cp ../imports/OBI_import.owl .
-cp ../imports/OBIB_import.owl .
-cp ../imports/OGG_import.owl .
-cp ../imports/OMRSE_import.owl .
+cp ../imports/*import.owl .
+
 
 robot merge \
   --inputs "*.owl"\
