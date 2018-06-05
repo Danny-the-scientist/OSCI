@@ -19,6 +19,7 @@ http://purl.obolibrary.org/obo/OBI_0001909 #conclusion based on data
 http://purl.obolibrary.org/obo/OBI_0000070 #assay
 http://purl.obolibrary.org/obo/OBI_0000443 #analyte assay
 http://purl.obolibrary.org/obo/OBI_0000079 #culture medium
+http://purl.obolibrary.org/obo/OBI_0000319 #material to be added role
 http://purl.obolibrary.org/obo/IAO_0000572 #documenting
 http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
 http://purl.obolibrary.org/obo/OBI_0000338 #drawing a conclusion based on data
