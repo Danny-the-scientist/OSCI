@@ -1,0 +1,14 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+select distinct ?class_prefix (count(?class_prefix) as ?count)
+where {
+    ?class rdf:type owl:Class .
+    {
+        bind(strbefore(strafter(str(?class), "obo/"), "_") AS ?class_prefix)
+    } union {
+        bind(strbefore(strafter(str(?class), "efo/"), "_") AS ?class_prefix)
+    }
+    filter(strlen(str(?class_prefix)) > 0)
+    filter(!isblank(?class))
+} group by ?class_prefix
+order by desc(?count) ?class_prefix
