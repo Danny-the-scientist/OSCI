@@ -9,6 +9,37 @@ Since the robot.jar file is in the directory, calls to robot are made using the 
 Alternatively, if your system is configured properly, you can edit the script to call robot directly. 
 For example, if the path to robot is in your `PATH` environment variable, you can replace `java -jar ./robot.jar` with `robot`.
 
+## MERGE ERRORS AND THE CATALOG-V001.XML FILE
+As you create new import files for the ontology, robot may throw an error saying it cannot locate the import ontology.
+This error is most likely fixed by editing the catalog-v001.xml file in the build directory to include the new import.
+For example, suppose the catalog-v001.xml references the current imports like so:
+```
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+	<uri name="http://purl.obolibrary.org/obo/osci/CLO_import.owl" uri="CLO_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/CL_import.owl" uri="CL_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/OBI_import.owl" uri="OBI_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/OGG_import.owl" uri="OGG_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/OMRSE_import.owl" uri="OMRSE_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/NCIT_import.owl" uri="NCIT_import.owl"/>
+</catalog>
+```
+
+You then create a file named `foo.owl` in the imports directory. 
+In order for the robot merge operation to execute, you may need to modify the catalog file to reference `foo.owl`:
+```
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+	<uri name="http://purl.obolibrary.org/obo/osci/CLO_import.owl" uri="CLO_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/CL_import.owl" uri="CL_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/OBI_import.owl" uri="OBI_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/OGG_import.owl" uri="OGG_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/OMRSE_import.owl" uri="OMRSE_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/NCIT_import.owl" uri="NCIT_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/osci/foo.owl" uri="foo.owl"/>
+</catalog>
+```
+
 ## RUNNING THE RELEASE SCRIPT
 To release a version of the OSCI run the `robot_release.sh` command
 

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-	<uri name="http://purl.obolibrary.org/obo/osci/CLO_import.owl" uri="CLO_import.owl"/>
-	<uri name="http://purl.obolibrary.org/obo/osci/CL_import.owl" uri="CL_import.owl"/>
-	<uri name="http://purl.obolibrary.org/obo/osci/OBI_import.owl" uri="OBI_import.owl"/>
-	<uri name="http://purl.obolibrary.org/obo/osci/OGG_import.owl" uri="OGG_import.owl"/>
-	<uri name="http://purl.obolibrary.org/obo/osci/OMRSE_import.owl" uri="OMRSE_import.owl"/>
-	<uri name="http://purl.obolibrary.org/obo/osci/NCIT_import.owl" uri="NCIT_import.owl"/>
+    <group id="imports" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/osci/CLO_import.owl" uri="imports/CLO_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/osci/CL_import.owl" uri="imports/CL_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/osci/OBI_import.owl" uri="imports/OBI_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/osci/OGG_import.owl" uri="imports/OGG_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/osci/OMRSE_import.owl" uri="imports/OMRSE_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/osci/NCIT_import.owl" uri="imports/NCIT_import.owl"/>
+    </group>
 </catalog>
