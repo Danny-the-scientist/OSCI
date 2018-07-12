@@ -13,7 +13,7 @@ For example, if the path to robot is in your `PATH` environment variable, you ca
 As you create new import files for the ontology, robot may throw an error saying it cannot locate the import ontology.
 This error is most likely fixed by editing the catalog-v001.xml file in the build directory to include the new import.
 For example, suppose the catalog-v001.xml references the current imports like so:
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 	<uri name="http://purl.obolibrary.org/obo/osci/CLO_import.owl" uri="CLO_import.owl"/>
@@ -27,7 +27,7 @@ For example, suppose the catalog-v001.xml references the current imports like so
 
 You then create a file named `foo.owl` in the imports directory. 
 In order for the robot merge operation to execute, you may need to modify the catalog file to reference `foo.owl`:
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 	<uri name="http://purl.obolibrary.org/obo/osci/CLO_import.owl" uri="CLO_import.owl"/>
@@ -53,7 +53,7 @@ The `osci.owl` is the **release file**. Open `osci.owl` and check that the ontol
 The `osci-merged.owl` and `osci-annotated.owl` are intermediary files produced in the release process.
 They are deleted after the build process completes, but they can be helpful in tracking down errors. 
 To prevent them from being deleted, comment out the following lines in the build script:
-```
+```bash
 rm osci-merged.owl
 rm osci-annotated.owl
 ```
@@ -67,7 +67,7 @@ git commit -am "create OSCI release $(date '+%Y-%m-%dT%H:%M:%S')"
 git push
 ```
 - tag the repo with the date and time and push the tag: 
-```
+```bash
 git tag OSCI_release_$(date '+%Y-%m-%dT%H_%M_%S') -m "OSCI REALEASE $(date '+%Y-%m-%d %H:%M:%S')"
 git push origin --tags
 ```
