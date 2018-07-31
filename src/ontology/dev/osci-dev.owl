@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/dev/osci.owl/"
-     xml:base="http://purl.obolibrary.org/obo/dev/osci.owl/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/dev/osci.owl#"
+     xml:base="http://purl.obolibrary.org/obo/dev/osci.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
@@ -845,6 +845,91 @@
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-05T19:24:37Z</dc:date>
         <rdfs:label>concentration measurment datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-31T13:29:59Z</dc:date>
+        <efo:definition>A planned process during which stem cells are created or maintained.</efo:definition>
+        <rdfs:label xml:lang="en">stem cell culturing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OSCI_0000034"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OSCI_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-31T13:32:20Z</dc:date>
+        <efo:definition>A cell culture additive role borne by an entity whose presence supports the culturing of stem cells and is realized in the stem cell culturing process.</efo:definition>
+        <rdfs:label xml:lang="en">stem cell culturing component role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OSCI_0000034"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-31T13:41:51Z</dc:date>
+        <rdfs:label xml:lang="en">cell culture growth additive role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-31T13:43:01Z</dc:date>
+        <rdfs:label xml:lang="en">cell culture substrate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OSCI_0000040"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-31T13:43:16Z</dc:date>
+        <rdfs:label xml:lang="en">matrigel substrate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000079"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-31T13:45:09Z</dc:date>
+        <rdfs:label xml:lang="en">basal cell culture medium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OSCI_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OSCI_0000035"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-31T13:47:59Z</dc:date>
+        <rdfs:label xml:lang="en">fetal bovine serum culture additive</rdfs:label>
     </owl:Class>
     
 
