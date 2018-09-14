@@ -846,7 +846,7 @@ The organism from which the sample was taken.</obo:IAO_0000115>
         </rdfs:subClassOf>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-05T19:24:37Z</dc:date>
-        <rdfs:label>concentration measurment datum x</rdfs:label>
+        <rdfs:label>concentration measurment datum</rdfs:label>
     </owl:Class>
     
 
