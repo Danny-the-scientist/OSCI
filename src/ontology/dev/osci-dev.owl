@@ -599,7 +599,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T22:04:02Z</dc:date>
-        <rdfs:label>stem cell producer</rdfs:label>
+        <rdfs:label>stem cell producer organization</rdfs:label>
     </owl:Class>
     
 
@@ -610,7 +610,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-31T22:05:33Z</dc:date>
-        <rdfs:label>stem cell provider</rdfs:label>
+        <rdfs:label>stem cell provider organization</rdfs:label>
     </owl:Class>
     
 
@@ -760,9 +760,11 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>An organism that bears a donor role.
+The organism from which the sample was taken.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-05T17:59:34Z</dc:date>
-        <rdfs:label>donor</rdfs:label>
+        <rdfs:label>donor organism</rdfs:label>
     </owl:Class>
     
 
@@ -864,7 +866,7 @@
     <!-- http://purl.obolibrary.org/obo/OSCI_0000038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OSCI_0000038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OSCI_0000034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OSCI_0000039"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
@@ -873,8 +875,8 @@
         </rdfs:subClassOf>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-31T13:32:20Z</dc:date>
-        <efo:definition>A cell culture additive role borne by an entity whose presence supports the culturing of stem cells and is realized in the stem cell culturing process.</efo:definition>
-        <rdfs:label xml:lang="en">stem cell culturing component role</rdfs:label>
+        <efo:definition>A cell culture growth additive role borne by an entity whose presence supports the culturing of stem cells and is realized in the stem cell culturing process.</efo:definition>
+        <rdfs:label xml:lang="en">stem cell culture growth additive role</rdfs:label>
     </owl:Class>
     
 
